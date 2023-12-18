@@ -883,6 +883,22 @@
 		D9B25FA11BEE79370038C00A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D9B25FA21BEE79370038C00A /* NSArray+YYAdd.h */,
+				D9B25FA31BEE79370038C00A /* NSArray+YYAdd.m */,
+				D9B25FA41BEE79370038C00A /* NSBundle+YYAdd.h */,
+				D9B25FA51BEE79370038C00A /* NSBundle+YYAdd.m */,
+				D9B25FA61BEE79370038C00A /* NSData+YYAdd.h */,
+				D9B25FA71BEE79370038C00A /* NSData+YYAdd.m */,
+				D9B25FA81BEE79370038C00A /* NSDate+YYAdd.h */,
+				D9B25FA91BEE79370038C00A /* NSDate+YYAdd.m */,
+				D9B25FAA1BEE79370038C00A /* NSDictionary+YYAdd.h */,
+				D9B25FAB1BEE79370038C00A /* NSDictionary+YYAdd.m */,
+				D9B25FAC1BEE79370038C00A /* NSKeyedUnarchiver+YYAdd.h */,
+				D9B25FAD1BEE79370038C00A /* NSKeyedUnarchiver+YYAdd.m */,
+				D9B25FAE1BEE79370038C00A /* NSNotificationCenter+YYAdd.h */,
+				D9B25FAF1BEE79370038C00A /* NSNotificationCenter+YYAdd.m */,
+				D9B25FB01BEE79370038C00A /* NSNumber+YYAdd.h */,
+				D9B25FB11BEE79370038C00A /* NSNumber+YYAdd.m */,
 				D9B25FB21BEE79370038C00A /* NSObject+YYAdd.h */,
 				D9B25FB31BEE79370038C00A /* NSObject+YYAdd.m */,
 				D9B25FB41BEE79370038C00A /* NSObject+YYAddForARC.h */,
@@ -891,26 +907,10 @@
 				D9B25FB71BEE79370038C00A /* NSObject+YYAddForKVO.m */,
 				D9B25FB81BEE79370038C00A /* NSString+YYAdd.h */,
 				D9B25FB91BEE79370038C00A /* NSString+YYAdd.m */,
-				D9B25FB01BEE79370038C00A /* NSNumber+YYAdd.h */,
-				D9B25FB11BEE79370038C00A /* NSNumber+YYAdd.m */,
-				D9B25FA61BEE79370038C00A /* NSData+YYAdd.h */,
-				D9B25FA71BEE79370038C00A /* NSData+YYAdd.m */,
-				D9B25FA21BEE79370038C00A /* NSArray+YYAdd.h */,
-				D9B25FA31BEE79370038C00A /* NSArray+YYAdd.m */,
-				D9B25FAA1BEE79370038C00A /* NSDictionary+YYAdd.h */,
-				D9B25FAB1BEE79370038C00A /* NSDictionary+YYAdd.m */,
-				D9B25FA81BEE79370038C00A /* NSDate+YYAdd.h */,
-				D9B25FA91BEE79370038C00A /* NSDate+YYAdd.m */,
-				D9B25FAE1BEE79370038C00A /* NSNotificationCenter+YYAdd.h */,
-				D9B25FAF1BEE79370038C00A /* NSNotificationCenter+YYAdd.m */,
-				D9B25FAC1BEE79370038C00A /* NSKeyedUnarchiver+YYAdd.h */,
-				D9B25FAD1BEE79370038C00A /* NSKeyedUnarchiver+YYAdd.m */,
-				D9B25FBC1BEE79370038C00A /* NSTimer+YYAdd.h */,
-				D9B25FBD1BEE79370038C00A /* NSTimer+YYAdd.m */,
-				D9B25FA41BEE79370038C00A /* NSBundle+YYAdd.h */,
-				D9B25FA51BEE79370038C00A /* NSBundle+YYAdd.m */,
 				D9B25FBA1BEE79370038C00A /* NSThread+YYAdd.h */,
 				D9B25FBB1BEE79370038C00A /* NSThread+YYAdd.m */,
+				D9B25FBC1BEE79370038C00A /* NSTimer+YYAdd.h */,
+				D9B25FBD1BEE79370038C00A /* NSTimer+YYAdd.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1003,16 +1003,16 @@
 		D9B25FEB1BEE79370038C00A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				D9B25FF41BEE79370038C00A /* UIImageView+YYWebImage.h */,
-				D9B25FF51BEE79370038C00A /* UIImageView+YYWebImage.m */,
-				D9B25FF21BEE79370038C00A /* UIButton+YYWebImage.h */,
-				D9B25FF31BEE79370038C00A /* UIButton+YYWebImage.m */,
+				D9B25FEC1BEE79370038C00A /* _YYWebImageSetter.h */,
+				D9B25FED1BEE79370038C00A /* _YYWebImageSetter.m */,
 				D9B25FEE1BEE79370038C00A /* CALayer+YYWebImage.h */,
 				D9B25FEF1BEE79370038C00A /* CALayer+YYWebImage.m */,
 				D9B25FF01BEE79370038C00A /* MKAnnotationView+YYWebImage.h */,
 				D9B25FF11BEE79370038C00A /* MKAnnotationView+YYWebImage.m */,
-				D9B25FEC1BEE79370038C00A /* _YYWebImageSetter.h */,
-				D9B25FED1BEE79370038C00A /* _YYWebImageSetter.m */,
+				D9B25FF21BEE79370038C00A /* UIButton+YYWebImage.h */,
+				D9B25FF31BEE79370038C00A /* UIButton+YYWebImage.m */,
+				D9B25FF41BEE79370038C00A /* UIImageView+YYWebImage.h */,
+				D9B25FF51BEE79370038C00A /* UIImageView+YYWebImage.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1069,24 +1069,24 @@
 		D9B2601F1BEE79370038C00A /* String */ = {
 			isa = PBXGroup;
 			children = (
-				D9B260281BEE79370038C00A /* YYTextAttribute.h */,
-				D9B260291BEE79370038C00A /* YYTextAttribute.m */,
-				D9B260261BEE79370038C00A /* YYTextArchiver.h */,
-				D9B260271BEE79370038C00A /* YYTextArchiver.m */,
-				D9B2602A1BEE79370038C00A /* YYTextParser.h */,
-				D9B2602B1BEE79370038C00A /* YYTextParser.m */,
-				D9B260301BEE79370038C00A /* YYTextUtilities.h */,
-				D9B260311BEE79370038C00A /* YYTextUtilities.m */,
-				D9B2602E1BEE79370038C00A /* YYTextRunDelegate.h */,
-				D9B2602F1BEE79370038C00A /* YYTextRunDelegate.m */,
-				D9B2602C1BEE79370038C00A /* YYTextRubyAnnotation.h */,
-				D9B2602D1BEE79370038C00A /* YYTextRubyAnnotation.m */,
 				D9B260201BEE79370038C00A /* NSAttributedString+YYText.h */,
 				D9B260211BEE79370038C00A /* NSAttributedString+YYText.m */,
 				D9B260221BEE79370038C00A /* NSParagraphStyle+YYText.h */,
 				D9B260231BEE79370038C00A /* NSParagraphStyle+YYText.m */,
 				D9B260241BEE79370038C00A /* UIPasteboard+YYText.h */,
 				D9B260251BEE79370038C00A /* UIPasteboard+YYText.m */,
+				D9B260261BEE79370038C00A /* YYTextArchiver.h */,
+				D9B260271BEE79370038C00A /* YYTextArchiver.m */,
+				D9B260281BEE79370038C00A /* YYTextAttribute.h */,
+				D9B260291BEE79370038C00A /* YYTextAttribute.m */,
+				D9B2602A1BEE79370038C00A /* YYTextParser.h */,
+				D9B2602B1BEE79370038C00A /* YYTextParser.m */,
+				D9B2602C1BEE79370038C00A /* YYTextRubyAnnotation.h */,
+				D9B2602D1BEE79370038C00A /* YYTextRubyAnnotation.m */,
+				D9B2602E1BEE79370038C00A /* YYTextRunDelegate.h */,
+				D9B2602F1BEE79370038C00A /* YYTextRunDelegate.m */,
+				D9B260301BEE79370038C00A /* YYTextUtilities.h */,
+				D9B260311BEE79370038C00A /* YYTextUtilities.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -1482,6 +1482,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = Z3G537X8KY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -1499,7 +1500,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1511,6 +1512,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = Z3G537X8KY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -1527,7 +1529,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
