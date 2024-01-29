@@ -16,6 +16,8 @@
 FOUNDATION_EXPORT double YYKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
 
+// 就是试试
+
 #import <YYKit/YYKitMacro.h>
 #import <YYKit/NSObject+YYAdd.h>
 #import <YYKit/NSObject+YYAddForKVO.h>
