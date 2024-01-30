@@ -119,7 +119,10 @@ static int _YYWebImageHighlightedSetterKey;
         
         if (!imageURL) {
             if (!(options & YYWebImageOptionIgnorePlaceHolder)) {
-                self.image = placeholder;
+                __weak typeof(self) weakSelf = self;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    self.image = placeholder;
+                });
             }
             return;
         }
@@ -133,14 +136,20 @@ static int _YYWebImageHighlightedSetterKey;
         }
         if (imageFromMemory) {
             if (!(options & YYWebImageOptionAvoidSetImage)) {
-                self.image = imageFromMemory;
+                __weak typeof(self) weakSelf = self;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    self.image = imageFromMemory;
+                });
             }
             if(completion) completion(imageFromMemory, imageURL, YYWebImageFromMemoryCacheFast, YYWebImageStageFinished, nil);
             return;
         }
         
         if (!(options & YYWebImageOptionIgnorePlaceHolder)) {
-            self.image = placeholder;
+            __weak typeof(self) weakSelf = self;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.image = placeholder;
+            });
         }
         
         __weak typeof(self) _self = self;
@@ -168,7 +177,10 @@ static int _YYWebImageHighlightedSetterKey;
                             transition.type = kCATransitionFade;
                             [self.layer addAnimation:transition forKey:_YYWebImageFadeAnimationKey];
                         }
-                        self.image = image;
+                        __weak typeof(self) weakSelf = self;
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            self.image = image;
+                        });
                     }
                     if (completion) {
                         if (sentinelChanged) {
